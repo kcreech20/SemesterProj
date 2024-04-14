@@ -15,6 +15,8 @@
 	<key>STORAGE_BUCKET</key>
 	<string>moodmusicapp-cc5dd.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
+    <key>NSCameraUsageDescription</key>
+    <string>We need access to your camera to take pictures for the Music Mood App.</string>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false></false>
@@ -26,5 +28,6 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:1049709653704:ios:186ffb2c75a1e42cf2bffd</string>
+
 </dict>
 </plist>

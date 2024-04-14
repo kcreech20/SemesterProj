@@ -11,7 +11,15 @@ struct HomeView: View {
 
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            //Text("Hello, World!")
+            NavigationLink {
+                CameraView()
+            } label:{
+                HStack(alignment: .center, content: {
+                    Text("Take A Photo")
+                        .font(.system(size: 25))
+                        //.Color.blue
+                })}
 
             Spacer() // Adds space between the text and the button
 
@@ -25,7 +33,7 @@ struct HomeView: View {
                 }
                 .foregroundColor(.white)
                 .frame(width: UIScreen.main.bounds.width - 32, height: 48)
-                .background(Color.red) // Use your app's theme color here
+                .background(Color.red)
                 .cornerRadius(24)
             }
         }
