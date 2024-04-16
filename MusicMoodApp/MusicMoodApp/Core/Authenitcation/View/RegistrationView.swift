@@ -2,7 +2,7 @@
 //  RegistrationView.swift
 //  MusicMoodApp
 //
-//  Created by Vestibular Lab on 3/17/24.
+//  Created by Katie Creech on 3/17/24.
 //
 
 
@@ -72,7 +72,7 @@ struct RegistrationView: View {
             .frame(width: UIScreen.main.bounds.width - 32, height: 48)
             
         }
-        .background(Color(.systemMint))
+        .background(Color(.systemPurple))
 //        .disabled(formIsValid)
 //        .opacity(formIsValid ? 1.0 : 0.5)
         .cornerRadius(10)

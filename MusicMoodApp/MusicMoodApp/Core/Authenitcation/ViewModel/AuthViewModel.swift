@@ -1,8 +1,8 @@
 //
 //  AuthViewModel.swift
-//  MusicMoodApp
+//  ML Sound App
 //
-//  Created by Vestibular Lab on 3/17/24.
+//  Created by Katie Creech on 2/10/24.
 //
 
 import Foundation

@@ -2,39 +2,51 @@
 //  HomeView.swift
 //  MusicMoodApp
 //
-//  Created by Vestibular Lab on 3/17/24.
+//  Created by Katie Creech on 3/17/24.
 
 import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var viewModel: AuthViewModel
+    @Binding var presentSideMenu: Bool
+    @State private var showCamera = false  
 
     var body: some View {
         VStack {
-            //Text("Hello, World!")
-            NavigationLink {
-                CameraView()
-            } label:{
-                HStack(alignment: .center, content: {
-                    Text("Take A Photo")
-                        .font(.system(size: 25))
-                        //.Color.blue
-                })}
+            HStack {
+                Button(action: {
+                    presentSideMenu.toggle()
+                }) {
+                    Image(systemName: "line.horizontal.3")
+                        .foregroundColor(.purple)
+                        .font(.title)
+                }
+                .padding(.leading, 16)
+                Spacer()
+            }
 
-            Spacer() // Adds space between the text and the button
+            Spacer()
 
+          
             Button(action: {
-                viewModel.signOut()
+                self.showCamera = true
             }) {
                 HStack {
-                    Text("SIGN OUT")
-                        .fontWeight(.semibold)
-                    Image(systemName: "arrow.right.circle.fill")
+                    Spacer()
+                    Text("Take A Photo")
+                        .font(.system(size: 25))
+                        .foregroundColor(.white)
+                    Spacer()
                 }
-                .foregroundColor(.white)
-                .frame(width: UIScreen.main.bounds.width - 32, height: 48)
-                .background(Color.red)
-                .cornerRadius(24)
+                .padding()
+                .background(Color.purple)
+                .cornerRadius(10)
+            }
+            .padding(.bottom, 30)
+            .sheet(isPresented: $showCamera) {
+                        CameraView(isPresented: $showCamera)
+                            .environmentObject(CameraViewModel())
+
             }
         }
         .padding()
@@ -43,7 +55,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
-            .environmentObject(AuthViewModel()) // Make sure to provide a mock AuthViewModel or the actual one you use in your app
+        HomeView(presentSideMenu: .constant(false))
+            .environmentObject(AuthViewModel())
     }
 }

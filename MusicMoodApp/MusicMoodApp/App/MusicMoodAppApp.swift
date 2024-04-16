@@ -2,7 +2,7 @@
 //  MusicMoodAppApp.swift
 //  MusicMoodApp
 //
-//  Created by Vestibular Lab on 3/17/24.
+//  Created by Katie Creech on 3/17/24.
 //
 
 import SwiftUI
