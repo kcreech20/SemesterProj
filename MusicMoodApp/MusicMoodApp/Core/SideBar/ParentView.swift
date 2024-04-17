@@ -12,12 +12,13 @@ struct MainTabbedView: View {
     
     @State var presentSideMenu = false
     @State var selectedSideMenuTab = 0
+    let classifier = CoreMLClassifier()
     
     var body: some View {
         ZStack{
             
             TabView(selection: $selectedSideMenuTab) {
-                HomeView(presentSideMenu: $presentSideMenu)
+                HomeView(imageClassifier: classifier, presentSideMenu: $presentSideMenu)
                     .tag(0)
                 LogoutView(presentSideMenu: $presentSideMenu)
                     .tag(1)
