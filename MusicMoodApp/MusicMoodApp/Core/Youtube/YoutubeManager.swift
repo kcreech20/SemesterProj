@@ -27,7 +27,7 @@ class YouTubeManager {
         return nil
     }
     
-    func getRandomVideoID() -> String? {
+    func getNextVideoID() -> String? {
         
         
         guard !urls.isEmpty else { return nil }
@@ -37,14 +37,12 @@ class YouTubeManager {
              return getVideoID(from: nextURL)
          
         
-        // Shuffle the array to ensure randomness
-//        let shuffledUrls = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: urls) as! [String]
-//
-//        if let randomURL = shuffledUrls.first {
-//            return getVideoID(from: randomURL)
-//        }
-//        return nil
     }
+    func updateURLs(newURLs: [String]) {
+        self.urls = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: newURLs) as! [String]
+        self.currentIndex = 0
+    }
+
   
     }
 
