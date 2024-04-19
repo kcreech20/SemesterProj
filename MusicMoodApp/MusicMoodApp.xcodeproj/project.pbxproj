@@ -17,7 +17,6 @@
 		7C5A92482BA7C52A00122A4A /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A92472BA7C52A00122A4A /* InputView.swift */; };
 		7C5A924A2BA7C54C00122A4A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A92492BA7C54C00122A4A /* User.swift */; };
 		7C5A924C2BA7C58500122A4A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A924B2BA7C58500122A4A /* HomeView.swift */; };
-		7C5A924E2BA7C5AE00122A4A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A924D2BA7C5AE00122A4A /* AuthViewModel.swift */; };
 		7C5A92502BA7C5CE00122A4A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A924F2BA7C5CE00122A4A /* LoginView.swift */; };
 		7C5A92522BA7C5EF00122A4A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A92512BA7C5EF00122A4A /* RegistrationView.swift */; };
 		7C5A92562BA7C6EA00122A4A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7C5A92552BA7C6EA00122A4A /* FirebaseAnalytics */; };
@@ -56,6 +55,7 @@
 		7CC849062BCFA68100645193 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC849052BCFA68100645193 /* YoutubeView.swift */; };
 		7CC849082BCFA6EB00645193 /* YoutubeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC849072BCFA6EB00645193 /* YoutubeManager.swift */; };
 		7CC8490A2BD123A800645193 /* FirebasePulling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC849092BD123A800645193 /* FirebasePulling.swift */; };
+		7CC8490C2BD2BA8700645193 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8490B2BD2BA8700645193 /* AuthViewModel.swift */; };
 		7CED78FB2BCD7214001C3962 /* sideBarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED78FA2BCD7214001C3962 /* sideBarMenuView.swift */; };
 		7CED78FD2BCD7237001C3962 /* sideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED78FC2BCD7237001C3962 /* sideMenuView.swift */; };
 		7CED78FF2BCD72AA001C3962 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED78FE2BCD72AA001C3962 /* ParentView.swift */; };
@@ -94,7 +94,6 @@
 		7C5A92472BA7C52A00122A4A /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		7C5A92492BA7C54C00122A4A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7C5A924B2BA7C58500122A4A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		7C5A924D2BA7C5AE00122A4A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		7C5A924F2BA7C5CE00122A4A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7C5A92512BA7C5EF00122A4A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		7C5A928B2BA7C79400122A4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		7CC849052BCFA68100645193 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		7CC849072BCFA6EB00645193 /* YoutubeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeManager.swift; sourceTree = "<group>"; };
 		7CC849092BD123A800645193 /* FirebasePulling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePulling.swift; sourceTree = "<group>"; };
+		7CC8490B2BD2BA8700645193 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		7CED78FA2BCD7214001C3962 /* sideBarMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBarMenuView.swift; sourceTree = "<group>"; };
 		7CED78FC2BCD7237001C3962 /* sideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenuView.swift; sourceTree = "<group>"; };
 		7CED78FE2BCD72AA001C3962 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 		7C5A92462BA7C50300122A4A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7C5A924D2BA7C5AE00122A4A /* AuthViewModel.swift */,
+				7CC8490B2BD2BA8700645193 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -514,7 +514,7 @@
 				7C5A92482BA7C52A00122A4A /* InputView.swift in Sources */,
 				7CC848FE2BCFA56200645193 /* CoreMLClassifier.mlmodel in Sources */,
 				7CED78FF2BCD72AA001C3962 /* ParentView.swift in Sources */,
-				7C5A924E2BA7C5AE00122A4A /* AuthViewModel.swift in Sources */,
+				7CC8490C2BD2BA8700645193 /* AuthViewModel.swift in Sources */,
 				7C5A92172BA7C42B00122A4A /* ContentView.swift in Sources */,
 				7CED78FB2BCD7214001C3962 /* sideBarMenuView.swift in Sources */,
 				7CC849062BCFA68100645193 /* YoutubeView.swift in Sources */,
@@ -700,6 +700,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -731,6 +732,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

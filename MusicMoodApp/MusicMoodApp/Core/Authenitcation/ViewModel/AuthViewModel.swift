@@ -2,7 +2,7 @@
 //  AuthViewModel.swift
 //  ML Sound App
 //
-//  Created by Katie Creech on 2/10/24.
+//  Created by Vestibular Lab on 2/10/24.
 //
 
 import Foundation

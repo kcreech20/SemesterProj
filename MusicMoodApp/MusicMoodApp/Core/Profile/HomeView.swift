@@ -34,6 +34,7 @@ struct HomeView: View {
         
         
     ])
+    @available(iOS 17.0, *)
     var body: some View {
         VStack {
             HStack {
@@ -66,6 +67,7 @@ struct HomeView: View {
             
             HStack {
                 Button("Library") {
+                
                     self.imagePickerSourceType = .photoLibrary
                     self.showImagePicker = true
                 }
@@ -76,7 +78,9 @@ struct HomeView: View {
                 
                 Button("Photo") {
                     self.imagePickerSourceType = .camera
-                    self.showImagePicker = true
+                   
+                        self.showImagePicker = true
+                    
                 }
                 .padding()
                 .background(Color.purple)
